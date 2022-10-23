@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--p: hsla(0, 0%, 100%, 0.75);
+--bg-h-btn: hsl(0, 0%, 95%);
+--Font-size: 15px;
+--font-big: 'Big Shoulders Display', cursive;
+--font-lexend: 'Lexend Deca', sans-serif;
+
+}
+*
+{
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-size: var(--Font-size);
+}
+html{
+              /* height:-webkit-fill-avilable ; */
+}
+body{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              min-height: 100vh;
+              background-color: var(--bg-h-btn);
+              margin: 2rem;
+              /* height: -webkit-fill-avilable; */
+
+}
+main
+{
+              max-width: 58.375rem;
+              height: 100%;
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              border-radius: .625rem ;
+              overflow: hidden;
+              transition: 0.5s ease-in-out;
+
+              cursor: pointer;
+
+}
+.imgbx
+{
+              margin: 1rem 0;
+}
+
+.items
+{
+              padding: 2rem;
+
+
+}
+.item1
+{
+              background-color: var(--Bright-orange);
+
+}
+.item2
+{
+              background-color: var(--Dark-cyan);
+}
+.item3
+{
+              background-color: var(--Very-dark-cyan);
+}
+.items h1{
+              color: var(--bg-h-btn);
+              font-size: 2rem;
+              font-family: var(--font-big);
+              text-transform: uppercase;
+              margin: 1.25rem 0;
+}
+.items p{
+              color: var(--p);
+              font-family: var(--font-lexend);
+              line-height: 1.4rem;
+              margin: 1.875rem 0;
+              margin-bottom: 5rem;
+
+}
+.items .btn
+{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-top: 2.5rem;
+              margin-bottom: 1rem;
+
+}
+a
+{
+              text-decoration: none;
+              padding: .625rem 1.875rem;
+              background-color: var(--bg-h-btn );
+              border-radius: 2rem;
+              font-size: 1.3rem;
+              transition: 0.5s linear;
+
+
+
+}
+.item1 .btn a
+{
+              color: var(--Bright-orange);
+}
+.item2 .btn a{
+              color: var(--Dark-cyan);
+}
+.item3 .btn a{
+              color: var(--Very-dark-cyan);
+
+}
+/* ---------------hover effect------------- */
+
+.item1 .btn a:hover{
+              background-color: transparent;
+              border: 2px solid var(--bg-h-btn);
+              color: var(--bg-h-btn);
+}
+
+.item2 .btn a:hover{
+              background-color: transparent;
+              border: 2px solid var(--bg-h-btn);
+              color: var(--bg-h-btn);
+}
+
+.item3 .btn a:hover{
+              background-color: transparent;
+              border: 2px solid var(--bg-h-btn);
+              color: var(--bg-h-btn);
+}
+
+
+
+/* -------media querries------- */
+
+@media  (max-width:600px) {
+              main{
+                            grid-template-columns: 1fr;
+              }
+              /* .item1{
+                            grid-row: 1/2;
+                            grid-column: 1/span 1;
+              }
+              .item2
+              {
+                            grid-row: 1/2;
+                            grid-column: 2/span 2;
+              }
+              .item3
+              {
+                            grid-row: 1/2;
+                            grid-column:3/span 3;
+              } */
+}
